@@ -22,6 +22,7 @@
 		B8032B502194EB4C007DDC6D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8032B4F2194EB4C007DDC6D /* ExtensionDelegate.swift */; };
 		B8032B522194EB4C007DDC6D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8032B512194EB4C007DDC6D /* NotificationController.swift */; };
 		B8032B542194EB4D007DDC6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8032B532194EB4D007DDC6D /* Assets.xcassets */; };
+		B8032B6D2199F67C007DDC6D /* chicken.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8032B6C2199F67C007DDC6D /* chicken.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		B8032B532194EB4D007DDC6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8032B552194EB4D007DDC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8032B562194EB4D007DDC6D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B8032B6C2199F67C007DDC6D /* chicken.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chicken.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 		B8032B4C2194EB4C007DDC6D /* MusicPlayer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B8032B6C2199F67C007DDC6D /* chicken.wav */,
 				B8032B4D2194EB4C007DDC6D /* InterfaceController.swift */,
 				B8032B4F2194EB4C007DDC6D /* ExtensionDelegate.swift */,
 				B8032B512194EB4C007DDC6D /* NotificationController.swift */,
@@ -335,6 +338,11 @@
 					};
 					B8032B472194EB4C007DDC6D = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -398,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8032B6D2199F67C007DDC6D /* chicken.wav in Resources */,
 				B8032B542194EB4D007DDC6D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,7 +636,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
@@ -649,7 +658,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
@@ -668,7 +677,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
@@ -687,7 +696,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
