@@ -22,7 +22,8 @@
 		B8032B502194EB4C007DDC6D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8032B4F2194EB4C007DDC6D /* ExtensionDelegate.swift */; };
 		B8032B522194EB4C007DDC6D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8032B512194EB4C007DDC6D /* NotificationController.swift */; };
 		B8032B542194EB4D007DDC6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8032B532194EB4D007DDC6D /* Assets.xcassets */; };
-		B8032B6D2199F67C007DDC6D /* chicken.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8032B6C2199F67C007DDC6D /* chicken.wav */; };
+		B8032B87219A21F4007DDC6D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8032B86219A21E2007DDC6D /* Alamofire.framework */; };
+		B8032B88219A21F4007DDC6D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8032B86219A21E2007DDC6D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,62 @@
 			remoteGlobalIDString = B8032B472194EB4C007DDC6D;
 			remoteInfo = "MusicPlayer WatchKit Extension";
 		};
+		B8032B79219A21E2007DDC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		B8032B7B219A21E2007DDC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		B8032B7D219A21E2007DDC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		B8032B7F219A21E2007DDC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		B8032B81219A21E2007DDC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		B8032B83219A21E2007DDC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		B8032B85219A21E2007DDC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		B8032B89219A21F4007DDC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4202FCD1B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +134,17 @@
 				B8032B3A2194EB4B007DDC6D /* MusicPlayer WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8032B8B219A21F5007DDC6D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B8032B88219A21F4007DDC6D /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -106,7 +174,9 @@
 		B8032B532194EB4D007DDC6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8032B552194EB4D007DDC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8032B562194EB4D007DDC6D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		B8032B6C2199F67C007DDC6D /* chicken.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chicken.wav; sourceTree = "<group>"; };
+		B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		B8032B8C219A35E5007DDC6D /* MusicPlayer WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MusicPlayer WatchKit App.entitlements"; sourceTree = "<group>"; };
+		B8032B8D219A3635007DDC6D /* MusicPlayer WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MusicPlayer WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8032B87219A21F4007DDC6D /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +215,7 @@
 		B8032B082194EB48007DDC6D = {
 			isa = PBXGroup;
 			children = (
+				B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */,
 				B8032B132194EB48007DDC6D /* MusicPlayer */,
 				B8032B282194EB4B007DDC6D /* MusicPlayerTests */,
 				B8032B332194EB4B007DDC6D /* MusicPlayerUITests */,
@@ -199,6 +271,7 @@
 		B8032B3D2194EB4B007DDC6D /* MusicPlayer WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				B8032B8C219A35E5007DDC6D /* MusicPlayer WatchKit App.entitlements */,
 				B8032B3E2194EB4B007DDC6D /* Interface.storyboard */,
 				B8032B412194EB4C007DDC6D /* Assets.xcassets */,
 				B8032B432194EB4C007DDC6D /* Info.plist */,
@@ -209,7 +282,7 @@
 		B8032B4C2194EB4C007DDC6D /* MusicPlayer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B8032B6C2199F67C007DDC6D /* chicken.wav */,
+				B8032B8D219A3635007DDC6D /* MusicPlayer WatchKit Extension.entitlements */,
 				B8032B4D2194EB4C007DDC6D /* InterfaceController.swift */,
 				B8032B4F2194EB4C007DDC6D /* ExtensionDelegate.swift */,
 				B8032B512194EB4C007DDC6D /* NotificationController.swift */,
@@ -218,6 +291,20 @@
 				B8032B562194EB4D007DDC6D /* PushNotificationPayload.apns */,
 			);
 			path = "MusicPlayer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B8032B6F219A21E2007DDC6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8032B7A219A21E2007DDC6D /* Alamofire.framework */,
+				B8032B7C219A21E2007DDC6D /* Alamofire iOS Tests.xctest */,
+				B8032B7E219A21E2007DDC6D /* Alamofire.framework */,
+				B8032B80219A21E2007DDC6D /* Alamofire macOS Tests.xctest */,
+				B8032B82219A21E2007DDC6D /* Alamofire.framework */,
+				B8032B84219A21E2007DDC6D /* Alamofire tvOS Tests.xctest */,
+				B8032B86219A21E2007DDC6D /* Alamofire.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,10 +389,12 @@
 				B8032B442194EB4C007DDC6D /* Sources */,
 				B8032B452194EB4C007DDC6D /* Frameworks */,
 				B8032B462194EB4C007DDC6D /* Resources */,
+				B8032B8B219A21F5007DDC6D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B8032B8A219A21F4007DDC6D /* PBXTargetDependency */,
 			);
 			name = "MusicPlayer WatchKit Extension";
 			productName = "MusicPlayer WatchKit Extension";
@@ -335,10 +424,18 @@
 					};
 					B8032B382194EB4B007DDC6D = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					B8032B472194EB4C007DDC6D = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes.watchos.extension = {
 								enabled = 1;
 							};
@@ -357,6 +454,12 @@
 			mainGroup = B8032B082194EB48007DDC6D;
 			productRefGroup = B8032B122194EB48007DDC6D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B8032B6F219A21E2007DDC6D /* Products */;
+					ProjectRef = B8032B6E219A21E2007DDC6D /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B8032B102194EB48007DDC6D /* MusicPlayer */,
@@ -367,6 +470,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B8032B7A219A21E2007DDC6D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = B8032B79219A21E2007DDC6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8032B7C219A21E2007DDC6D /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = B8032B7B219A21E2007DDC6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8032B7E219A21E2007DDC6D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = B8032B7D219A21E2007DDC6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8032B80219A21E2007DDC6D /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = B8032B7F219A21E2007DDC6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8032B82219A21E2007DDC6D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = B8032B81219A21E2007DDC6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8032B84219A21E2007DDC6D /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = B8032B83219A21E2007DDC6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8032B86219A21E2007DDC6D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = B8032B85219A21E2007DDC6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B8032B0F2194EB48007DDC6D /* Resources */ = {
@@ -406,7 +561,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8032B6D2199F67C007DDC6D /* chicken.wav in Resources */,
 				B8032B542194EB4D007DDC6D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +625,11 @@
 			isa = PBXTargetDependency;
 			target = B8032B472194EB4C007DDC6D /* MusicPlayer WatchKit Extension */;
 			targetProxy = B8032B4A2194EB4C007DDC6D /* PBXContainerItemProxy */;
+		};
+		B8032B8A219A21F4007DDC6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire watchOS";
+			targetProxy = B8032B89219A21F4007DDC6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -622,6 +781,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MusicPlayer WatchKit Extension/MusicPlayer WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 662Q6JUT69;
 				INFOPLIST_FILE = "MusicPlayer WatchKit Extension/Info.plist";
@@ -636,7 +796,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Debug;
 		};
@@ -644,6 +804,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MusicPlayer WatchKit Extension/MusicPlayer WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 662Q6JUT69;
 				INFOPLIST_FILE = "MusicPlayer WatchKit Extension/Info.plist";
@@ -658,7 +819,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
@@ -667,6 +828,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MusicPlayer WatchKit App/MusicPlayer WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 662Q6JUT69;
 				IBSC_MODULE = MusicPlayer_WatchKit_Extension;
@@ -677,7 +839,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Debug;
 		};
@@ -686,6 +848,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MusicPlayer WatchKit App/MusicPlayer WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 662Q6JUT69;
 				IBSC_MODULE = MusicPlayer_WatchKit_Extension;
@@ -696,7 +859,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
